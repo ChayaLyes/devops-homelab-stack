@@ -1,0 +1,21 @@
+# ============================================================
+# Prometheus + Grafana — Configuration
+# Installation : helm install monitoring prometheus-community/kube-prometheus-stack
+#                -f monitoring/values-prometheus.yaml
+#                --namespace monitoring --create-namespace
+# ============================================================
+
+grafana:
+  enabled: true
+  adminPassword: "admin123"
+  service:
+    type: ClusterIP
+    port: 80
+
+prometheus:
+  enabled: true
+  prometheusSpec:
+    retention: 7d
+
+alertmanager:
+  enabled: true
