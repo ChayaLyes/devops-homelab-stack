@@ -2,7 +2,7 @@ replicaCount: 1
 
 image:
   repository: ghcr.io/chayalyes/devops-homelab-stack
-  tag: "6050c3deed544d391fca9945927bb1ca76e485c7"
+  tag: "9cffa51eca53c743eade104f7b355e137773442a"
   pullPolicy: IfNotPresent
 
 service:
